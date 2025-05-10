@@ -211,6 +211,41 @@
         </div>
     </section>
 
+<!-- Scroll to top button -->
+<div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
 
+<!-- JavaScript for scroll to top button -->
+<script>
+    // Scroll to top button
+    const scrollTopBtn = document.querySelector('.scroll-top');
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('active');
+        } else {
+            scrollTopBtn.classList.remove('active');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
 </html>

@@ -31,9 +31,9 @@
 <!-- Home starts -->
 <section class="home" id="home">
     <div class="content">
-        <h3>Fresh Flowers</h3>
+        <h3 class="float-animation">Fresh Flowers</h3>
         <span>Natural & beautiful flowers</span>
-        <p>We have a variety of beautiful flowers at affordable prices for wedding gifts, house parties and housewarming parties. </p>
+        <p>We have a variety of beautiful flowers at affordable prices for wedding gifts, house parties and housewarming parties in Somalia. </p>
         <a href="#" class="btn">Shop Now</a>
     </div>
 </section>
@@ -43,7 +43,7 @@
 <section class="products" id="products">
     <h1 class="heading">Featured<span> Flowers</span></h1>
     <div class="box-container">
-        <div class="box">
+        <div class="box hover-scale">
             <div class="img">
                 <img src="Assets/img-1.jpg" alt="">
                 <div class="icons">
@@ -53,11 +53,11 @@
                 </div>
             </div>
             <div class="content">
-                <h3>Flower pot</h3>
+                <h3>Somali Rose Bouquet</h3>
                 <div class="price">$12.99 <span>$15.99</span></div>
             </div>
         </div>
-        <div class="box">
+        <div class="box hover-scale">
             <div class="img">
                 <img src="Assets/img-2.jpg" alt="">
                 <div class="icons">
@@ -67,11 +67,11 @@
                 </div>
             </div>
             <div class="content">
-                <h3>Flower pot</h3>
+                <h3>Mogadishu Lilies</h3>
                 <div class="price">$12.99 <span>$15.99</span></div>
             </div>
         </div>
-        <div class="box">
+        <div class="box hover-scale">
             <div class="img">
                 <img src="Assets/img-11.png" alt="">
                 <div class="icons">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="content">
-                <h3>Flower pot</h3>
+                <h3>Hargeisa Tulips</h3>
                 <div class="price">$12.99 <span>$15.99</span></div>
             </div>
         </div>
@@ -90,19 +90,25 @@
 <!-- qurxin end -->
 <!-- why -->
 <section class="about" id="about">
+    <h1 class="heading">Why <span>Choose Us</span></h1>
     <div class="row">
-        <div class="video-container">
-    <video src="Assets/Videos/th.mp4" loop autoplay muted></video>
-    <h3>best flowers sellers</h3>
+        <div class="video-container float-animation">
+            <video src="Assets/Videos/th.mp4" loop autoplay muted></video>
+            <h3>Somalia's Best Flower Shop</h3>
         </div>
-    <div class="content">
-        <h3>why choose us?</h3>
-        <p>We are Somalia's premier flower shop, offering the freshest blooms sourced from local Somali gardens and international suppliers.</p>
-        <p>Our team of experienced florists creates stunning arrangements for all occasions, with same-day delivery available throughout Mogadishu and other major cities in Somalia.</p>
-        <a href="#" class="btn">learn more</a>
+        <div class="content">
+            <h3>Bringing Beauty to Somalia</h3>
+            <p>We are Somalia's premier flower shop, offering the freshest blooms sourced from local Somali gardens and international suppliers.</p>
+            <p>Our team of experienced florists creates stunning arrangements for all occasions, with same-day delivery available throughout Mogadishu and other major cities in Somalia.</p>
+            <ul style="list-style: none; margin: 2rem 0;">
+                <li style="margin-bottom: 1rem; font-size: 1.6rem; color: #666;"><i class="fas fa-check" style="color: var(--pink); margin-right: 1rem;"></i> Fresh flowers delivered daily</li>
+                <li style="margin-bottom: 1rem; font-size: 1.6rem; color: #666;"><i class="fas fa-check" style="color: var(--pink); margin-right: 1rem;"></i> Expert florists with years of experience</li>
+                <li style="margin-bottom: 1rem; font-size: 1.6rem; color: #666;"><i class="fas fa-check" style="color: var(--pink); margin-right: 1rem;"></i> Same-day delivery in Mogadishu</li>
+            </ul>
+            <a href="#" class="btn">Learn More</a>
+        </div>
     </div>
-    </div>
-    </section>
+</section>
 <section class="icons-container">
     <div class="icons">
         <img src="Assets/icon-1.png" alt="">
@@ -135,18 +141,19 @@
 </section>
 <!-- vide0-1 -->
 <div class="vid">
-<div class="row">
-      <div class="content">
-        <h3>Somali Vibes<span>With Flowers</span></h3>
-        <p>Experience the beauty of traditional Somali floral arrangements</p>
-        <p>Perfect for weddings, celebrations, and special occasions in Somalia</p>
-        <a href="#" class="btn">Order Now</a>
-
+    <h1 class="heading">Somali <span>Floral Traditions</span></h1>
+    <div class="row">
+        <div class="content">
+            <h3>Somali Vibes<span> With Flowers</span></h3>
+            <p><i class="fas fa-leaf" style="color: var(--pink); margin-right: 1rem;"></i> Experience the beauty of traditional Somali floral arrangements</p>
+            <p><i class="fas fa-heart" style="color: var(--pink); margin-right: 1rem;"></i> Perfect for weddings, celebrations, and special occasions in Somalia</p>
+            <p><i class="fas fa-gift" style="color: var(--pink); margin-right: 1rem;"></i> Customized designs that reflect Somali culture and heritage</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="video-container float-animation">
+            <video src="Assets/Videos/8d5bee1bdfb1052bd81234352c2de337.mp4" loop autoplay muted></video>
+        </div>
     </div>
-    <div class="video-container">
-        <video src="Assets/Videos/8d5bee1bdfb1052bd81234352c2de337.mp4" loop autoplay muted></video>
-    </div>
-</div>
 </div>
 
 <!-- footer -->
@@ -192,6 +199,43 @@
     </div>
 </section>
 <!-- ends footer -->
+
+<!-- Scroll to top button -->
+<div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- JavaScript for scroll to top button -->
+<script>
+    // Scroll to top button
+    const scrollTopBtn = document.querySelector('.scroll-top');
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('active');
+        } else {
+            scrollTopBtn.classList.remove('active');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
 
 </body>
 </html>
